@@ -6,10 +6,7 @@ from collections import defaultdict
 with open('words') as f:
     words = list(filter(lambda x: len(x) == 3, map(lambda x: x.strip(), f.readlines())))
 
-for x in ['mys', 'ova', 'alb', 'deb',
-          'sty','ani','ohs','auk', 'meg', 'lei', 'pis', 'gyp', 'hos', 'ifs', 'ins',
-          'hie','sis','wen', 'rev', 'zit','zed', 'adz',
-          'hes','nth',
+for x in ['hie','sis','wen', 'rev', 'zit','zed', 'adz',
           'fer','rep','ugh','erg','fag','ups','ads','mes','née','poi',
           'sos','brr','bra','err','sex','ism',
 ]:
