@@ -8,7 +8,7 @@ with open('words.four') as f:
 with open('basic.four') as f:
     basic = sorted(list(filter(lambda x: len(x) == 4, map(lambda x: x.strip(), f.readlines()))))
 
-print(len(words))
+print len(words)
 wordset = set(words)
 first2 = set(map(lambda x: x[:2], words))
 first3 = set(map(lambda x: x[:3], words))
@@ -58,11 +58,11 @@ tuples = []
 for v0 in basic:
     for i in range(4):
         tuples += tuples_with_word(i,v0)
-    print(v0,len(tuples))
+    print v0,len(tuples)
 tuples = sorted(list(set(tuples)))
 # tuples = tuples_with_word(1,'food')
 
-print('found', len(tuples))
+print 'found', len(tuples)
 
 def tuple_words(t):
     return [t[0], t[1], t[2], t[3],
@@ -107,8 +107,8 @@ def pretty_tuples(tuples):
             for t in line:
                 sys.stdout.write(t[i])
                 sys.stdout.write(' ')
-            print()
-        print()
+            print
+        print
 
 best_list = set(['mama','dada','papa'])
 common_list = set(['food'])
@@ -117,11 +117,8 @@ common_list = set(['food'])
 #     print(three)
 #     pretty_triples(alphabetical(three, triples))
 
-# print('5 common')
-# pretty_triples(triples_with_at_least(5, common_list, triples))
-
-# print('6 common')
-# pretty_triples(triples_with_at_least(6, common_list, triples))
+print '6 common'
+pretty_tuples(tuples_with_at_least(6, basic, tuples))
 
 # print('1 best and 4 only common')
 # pretty_triples(triples_with_at_least(1, best_list,
@@ -133,12 +130,6 @@ common_list = set(['food'])
 # print('2 best and 1 only common')
 # pretty_triples(triples_with_at_least(2, best_list,
 #                                      triples_with_at_least(3, common_list,triples)))
-
-# print('3 best')
-# pretty_triples(triples_with_at_least(3, best_list, triples))
-
-# print('2 very best')
-# pretty_triples(triples_with_at_least(2, ['mom','dad'], triples))
 
 nicest = [#('zood','owld','oldd','food'),
 ]
@@ -167,11 +158,11 @@ for l in letters_left:
 #print(new_list)
 
 good_stuff = []
-for t in tuples_with_at_least(6, common_list, tuples): # one_word(2, 'fox', tuples): # tuples:
+for t in tuples_with_at_least(6, basic, tuples): # one_word(2, 'fox', tuples): # tuples:
     if count_letters(letters_left, t) >= 3: # and has_letter('q', t):
         good_stuff.append(t)
 pretty_tuples(good_stuff)
 
-
-print('bot dad')
-pretty_tuples(one_word(1,'apes',one_word(0, 'dada', tuples)))
+pretty_tuples(one_word(1,'miri',tuples))
+# print('bot dad')
+# pretty_tuples(one_word(1,'apes',one_word(0, 'dada', tuples)))
