@@ -182,14 +182,40 @@ nicest = [('sip','ice','tea'),
           ('qua','urn','ant'),
 ]
 
+pretty_triples(nicest)
+nicest = [('sip','ice','tea'),
+          ('mom','one','pet'),
+          ('and','coy','ewe'),
+          ('dad','ape','den'),
+          ('baa','and','add'),
+          ('wet','ego','dog'),
+]
+pretty_triples(nicest)
 nicest = [('sip','ice','tea'),
           ('mom','one','pet'),
           ('and','coy','ewe'),
           ('dad','ape','mew'),
+          ('sew','ate','cat'),
+          ('owl','doe','dog'),
+          #('see','own','bed'),
           #('baa','and','add'),
           #('wet','ego','dog'),
           #('bug','are','ant'),
           #('owl','aha','fox'),
+]
+pretty_triples(nicest)
+nicest = [('sip','ice','tea'),
+          ('mom','one','pet'),
+          ('and','coy','ewe'),
+          ('sew','ate','dad'),
+]
+pretty_triples(nicest)
+nicest = [('hat','air','dry'),
+          ('mom','one','pet'),
+          ('and','coy','ewe'),
+          ('dad','ape','mew'),
+          ('sew','ate','cat'),
+          ('wet','ego','dog'),
 ]
 pretty_triples(nicest)
 
@@ -216,12 +242,12 @@ for l in letters_left:
 #print(new_list)
 
 # print('2 needed and 2 only common')
-# pretty_triples(triples_n_letters(1, letters_left,
-#                                  triples_with_at_least(2, common_list,triples)))
+# pretty_triples(triples_n_letters(1, letters_left,triples))
+                                 #triples_with_at_least(0, common_list,triples)))
 
 good_stuff = []
-for t in one_word(1, 'the', triples): # triples:
-    if count_letters(letters_left, t) >= 0: # and has_letter('q', t):
+for t in triples_with_at_least(2, common_list, triples): # one_word(2, 'fox', triples): # triples:
+    if count_letters(letters_left, t) >= 3: # and has_letter('q', t):
         good_stuff.append(t)
 pretty_triples(good_stuff)
 
@@ -239,8 +265,8 @@ for t in triples:
 # print('top mom')
 # pretty_triples(one_word(0, 'mom', triples))
 # print('top and')
-#pretty_triples(one_word(1, 'ate', triples))
-print('top dad')
+#pretty_triples(one_word(2, 'and', triples))
+print('bot dad')
 pretty_triples(one_word(1,'ape',one_word(0, 'dad', triples)))
 # print('tops', len(tops))
 # pretty_triples(tops)
