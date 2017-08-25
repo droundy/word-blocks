@@ -13,7 +13,7 @@ animals = list(set(['lion','bear','goat','seal','dogs','cats','hawk','worm','cro
                     'emus','ibex','gnat','duck','lion','bear','yeti','crab','hare',
                     'wolf','mole','toad','boar','buck','bull','calf','colt','coon',
                     'deer','fawn','foal','joey','lamb','lynx','mule','newt','orca',
-                    'oxen',
+                    'oxen','lark',
 ]))
 
 words = list(set(words+animals))
@@ -326,10 +326,9 @@ best = p.run(
     print_report = print_report,
 )
 
-p.members.reverse()
-
-for i in p.members:
-    print_report(i)
+for i in range(len(p.members)):
+    ii = len(p.members)-i-1
+    print_report('{0}'.format(ii), p.members[ii])
 
 pretty_tuples(best.chromosomes)
 # print "Now being systematic..."
