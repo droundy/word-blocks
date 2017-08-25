@@ -1,12 +1,22 @@
-#!/usr/bin/python3
+#!/usr/bin/python2
 
-import sys
+import sys, random, genalg
 from collections import defaultdict
 
 with open('words.four') as f:
     words = list(filter(lambda x: len(x) == 4, map(lambda x: x.strip(), f.readlines())))
 with open('basic.four') as f:
     basic = sorted(list(filter(lambda x: len(x) == 4, map(lambda x: x.strip(), f.readlines()))))
+
+animals = list(set(['lion','bear','goat','seal','dogs','cats','hawk','worm','crow',
+                    'puma','slug','star','fish','herd','mink','duck','bird','pigs',
+                    'emus','ibex','gnat','duck','lion','bear','yeti','crab','hare',
+                    'wolf','mole','toad','boar','buck','bull','calf','colt','coon',
+                    'deer','fawn','foal','joey','lamb','lynx','mule','newt','orca',
+]))
+
+words = list(set(words+animals))
+# words = basic
 
 print len(words)
 wordset = set(words)
@@ -71,16 +81,19 @@ def tuple_words(t):
             t[0][2]+t[1][2]+t[2][2]+t[3][2],
             t[0][3]+t[1][3]+t[2][3]+t[3][3]]
 
+def has_letter(l, triple):
+    return l in t[0]+t[1]+t[2]+t[3]
+
+def count_letters(letters, triple):
+    return len(list(filter(lambda x: has_letter(x,triple), letters)))
+
 def has_word(triple, w):
     return w in tuple_words(triple)
+def has_horizontal_word(triple, w):
+    return w in triple
 
 def tuples_with(w, tuples):
     return list(filter(lambda t: has_word(t,w), tuples))
-
-def has_letter(l, triple):
-    return l in t[0]+t[1]+t[2]+t[3]
-def count_letters(letters, triple):
-    return len(list(filter(lambda x: has_letter(x,triple), letters)))
 
 def tuples_with_both(w1,w2):
     return list(filter(lambda t: has_word(t,w1) and has_word(t,w2), triples))
@@ -131,7 +144,19 @@ pretty_tuples(tuples_with_at_least(6, basic, tuples))
 # pretty_triples(triples_with_at_least(2, best_list,
 #                                      triples_with_at_least(3, common_list,triples)))
 
-nicest = [#('zood','owld','oldd','food'),
+nicest = [
+    ('lamb','afar','mama','pray'),
+    ('hold','oboe','love','deep'),
+    ('camp','aria','miri','pain'),
+    #('wish','idle','near','game'),
+    #('show','papa','even','went'),
+    #('quip','undo','idle','poem'), # or poet
+    #('warm','aqua','sunk','page'),
+    ('wild','idea','lead','dads'),
+    ('kiss','into','stun','song'),
+    #('chef','real','also','blew'),
+    ('swap','tale','ages','best'),
+    #('thee','real','arts','pose'),
 ]
 pretty_tuples(nicest)
 
@@ -149,7 +174,7 @@ pretty_tuples(nicest)
 print('remaining:', len(letters_left), letters_left)
 need_list = set([])
 for l in letters_left:
-    need_list.update(filter(lambda x: l in x, common_list))
+    need_list.update(filter(lambda x: l in x, basic))
 print(need_list)
 
 new_list = set([])
@@ -157,12 +182,154 @@ for l in letters_left:
     new_list.update(filter(lambda x: l in x, words))
 #print(new_list)
 
-good_stuff = []
-for t in tuples_with_at_least(6, basic, tuples): # one_word(2, 'fox', tuples): # tuples:
-    if count_letters(letters_left, t) >= 3: # and has_letter('q', t):
-        good_stuff.append(t)
-pretty_tuples(good_stuff)
+# good_stuff = []
+# for t in sorted(tuples_with_word(3, 'best')): #one_word(1,'gave', tuples): # tuples_with_at_least(4, basic, tuples_with_at_least(2, best, tuples)): # one_word(2, 'fox', tuples): # tuples:
+#     if count_letters(letters_left, t) >= 0: # and has_letter('q', t):
+#         good_stuff.append(t)
+# pretty_tuples(good_stuff)
 
-pretty_tuples(one_word(1,'miri',tuples))
+# print 'hello world'
+# pretty_tuples(tuples_with_at_least(2, best, tuples))
+
+#pretty_tuples(one_word(1,'love',tuples))
 # print('bot dad')
 # pretty_tuples(one_word(1,'apes',one_word(0, 'dada', tuples)))
+
+best = ['love','miri','mama','hugs','kiss','with','hold','doll','girl','boys']
+
+already_found = nicest
+
+unused_best = list(filter(lambda w: not any(map(lambda t: has_word(t, w), already_found)),
+                          best+animals))
+unused_basic = list(filter(lambda w: not any(map(lambda t: has_word(t, w), already_found)),
+                           basic))
+unused_words = list(filter(lambda w: not any(map(lambda t: has_word(t, w), already_found)),
+                           words))
+
+def score_alpha(tuples):
+    s = 0.0
+    missing = ''
+    contains = ''
+    for l in 'abcdefghijklmnopqrstuvwxyz':
+        if l in [c for t in tuples for w in t for c in w]: # any(map(lambda t: has_letter(l, t), tuples)):
+            s += 1.0
+            contains += l
+        else:
+            missing += l
+    return s, missing
+def score_basic(tuples):
+    s = 0.0
+    for b in unused_basic:
+        if any(map(lambda t: has_word(t, b), tuples)):
+            s += 1
+        if any(map(lambda t: has_horizontal_word(t, b), tuples)):
+            s += 0.5
+    return s
+def score_best(tuples):
+    s = 0.0
+    for b in unused_best:
+        if any(map(lambda t: has_word(t, b), tuples)):
+            s += 0.5
+        if any(map(lambda t: has_horizontal_word(t, b), tuples)):
+            s += 1.0
+    return s
+
+def score(tuples):
+    s = 0.0
+    s += score_best(tuples)
+    s += score_basic(tuples)
+    for b in unused_words:
+        if any(map(lambda t: has_word(t, b), tuples)):
+            s += 0.01
+    s += 10*score_alpha(tuples)[0]
+    return s
+def simple_score(t):
+    s = 0.0
+    for b in unused_best:
+        if has_horizontal_word(t, b):
+            s += 1.0
+    for b in unused_basic:
+        if has_word(t, b):
+            s += 1
+    for b in unused_basic:
+        if has_horizontal_word(t, b):
+            s += 0.5
+    return s
+
+print "previously had", len(tuples), 'tuples to work with'
+#tuples = list(filter(lambda t: simple_score(t) > 5, tuples))
+#print "reduced to", len(tuples), 'tuples to work with'
+
+def extend_tuple(start, bestscore):
+    if len(start) == 6:
+        return score(start), start
+    average_best = bestscore/6
+    best_tuple = start
+    if len(start) > 0 and score(start)/len(start) <= average_best:
+        return None
+    for t in tuples:
+        nextscore = score(start + [t])
+        if nextscore/(len(start)+1) > bestscore/6:
+            xxx = extend_tuple(start + [t], bestscore)
+            if xxx is not None and xxx[0] > bestscore:
+                print 'score', xxx[0], '>', bestscore
+                bestscore = xxx[0]
+                best_tuple = xxx[1]
+                pretty_tuples(best_tuple)
+    return bestscore, best_tuple
+
+bestscore = 0.0
+for i in range(1000): #range(len(tuples)):
+    attempt = random.sample(tuples, 6)
+    s = score(attempt)
+    if s > bestscore:
+        print 'random', i, ':', s, '>', bestscore
+        bestscore = s
+        best_tuple = attempt
+        pretty_tuples(best_tuple)
+
+p = genalg.Population(
+    popsize = 10000,
+    nchrom = 6,
+    chromset = tuples,
+)
+def print_report(name, ind):
+    alphscore, missing = score_alpha(ind.chromosomes)
+    for i in range(4):
+        if i == 0:
+            sys.stdout.write('   {0:5} {1:<6}'.format(name, ind.fitness))
+        elif i == 1:
+            sys.stdout.write('   {0:>5} {1:<6}'.format('a-z', alphscore))
+        elif i == 2:
+            if len(missing) <= 11:
+                sys.stdout.write('   {0:>11} '.format(missing))
+            else:
+                sys.stdout.write('   {0:>8}... '.format(missing[:8]))
+        elif i == 3:
+            sys.stdout.write('   {0:>5} {1:<6}'.format('bas', score_basic(ind.chromosomes)))
+        else:
+            sys.stdout.write('   {0:5} {1:<6}'.format('',''))
+        for t in ind.chromosomes:
+            sys.stdout.write(t[i])
+            sys.stdout.write(' ')
+        print
+    print
+
+best = p.run(
+    eval_fn = score,
+    generations = 1000,            # maximum generations to run for
+    verbose = True,
+    minimize = False,
+    mutations = ['mutate', 'shuffle-mate', 'sort'],
+    print_report = print_report,
+)
+
+p.members.reverse()
+
+for i in p.members:
+    print_report(i)
+
+pretty_tuples(best.chromosomes)
+# print "Now being systematic..."
+
+# print extend_tuple([], bestscore)

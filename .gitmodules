@@ -1,0 +1,3 @@
+[submodule "genalg"]
+	path = genalg
+	url = https://github.com/droundy/genetic-algorithm-package.git
