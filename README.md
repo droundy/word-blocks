@@ -18,4 +18,4 @@ a 3D blocks puzzle.
 If you just want to see my plans for puzzles, you could examine
 [poems.svg](poems.svg), which gives a few nice poems.
 
-![poems.svg](https://github.com/droundy/word-blocks/raw/master/poems.svg)
+![poems.png](https://github.com/droundy/word-blocks/raw/master/poems.png)

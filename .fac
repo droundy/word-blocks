@@ -1,1 +1,1 @@
-| inkscape --export-png=poems.png poems.svg
+| inkscape -d 300 --export-png=poems.png poems.svg
