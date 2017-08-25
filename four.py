@@ -197,7 +197,7 @@ for l in letters_left:
 # pretty_tuples(one_word(1,'apes',one_word(0, 'dada', tuples)))
 
 best = ['love','miri','mama','hugs','kiss','with','hold','doll','girl','boys',
-        'quip','quiz','whiz','zero','zoom','taxi',]
+        'quip','quiz','whiz','zero','zoom','taxi','cozy',]
 
 already_found = nicest
 
