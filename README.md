@@ -16,6 +16,6 @@ which will generate some optimum 4x4 word blocks, suitable for use on
 a 3D blocks puzzle.
 
 If you just want to see my plans for puzzles, you could examine
-[poems.svg](blob/master/poems.svg), which gives a few nice poems.
+[poems.svg](poems.svg), which gives a few nice poems.
 
 ![poems.svg](https://github.com/droundy/word-blocks/raw/master/poems.svg)
