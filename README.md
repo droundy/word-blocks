@@ -18,4 +18,4 @@ a 3D blocks puzzle.
 If you just want to see my plans for puzzles, you could examine
 [poems.svg](blob/master/poems.svg), which gives a few nice poems.
 
-![poems.svg](poems.svg)
+![poems.svg](raw/master/poems.svg)
