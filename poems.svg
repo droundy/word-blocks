@@ -27,7 +27,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="6.1269628"
      inkscape:cx="20.739525"
-     inkscape:cy="112.53537"
+     inkscape:cy="550.10943"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1470,6 +1470,13 @@
       <g
          id="g6557"
          transform="translate(45.508334,2.6458332)">
+        <rect
+           y="93.487549"
+           x="3.4777443"
+           height="14.297389"
+           width="14.297392"
+           id="rect6547"
+           style="opacity:1;fill:#fbfbfb;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <text
            id="text6545"
            y="97.945435"
@@ -1491,13 +1498,6 @@
              y="106.87512"
              x="11.005477"
              sodipodi:role="line">DRY</tspan></text>
-        <rect
-           y="93.487549"
-           x="3.4777443"
-           height="14.297389"
-           width="14.297392"
-           id="rect6547"
-           style="opacity:1;fill:#fbfbfb;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:Courier;-inkscape-font-specification:Courier;text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
