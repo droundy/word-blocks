@@ -243,7 +243,7 @@ def score(tuples):
     for b in unused_words:
         if any(map(lambda t: has_word(t, b), tuples)):
             s += 0.01
-    s += 10*score_alpha(tuples)[0]
+    s += 5*score_alpha(tuples)[0]
     return s
 def simple_score(t):
     s = 0.0
