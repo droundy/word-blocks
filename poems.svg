@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="poems-three.svg">
+   sodipodi:docname="poems.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="6.1269628"
-     inkscape:cx="343.511"
-     inkscape:cy="378.24031"
+     inkscape:cx="303.19739"
+     inkscape:cy="376.44497"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2040,29 +2040,29 @@
            style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:Courier;-inkscape-font-specification:Courier;text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
            x="94.237083"
            y="174.20433"
            id="text7025"><tspan
              sodipodi:role="line"
              x="94.766251"
              y="174.20433"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:Courier;-inkscape-font-specification:Courier;letter-spacing:1.05833328px;stroke-width:0.26458332px;"
              id="tspan7175">FLAG</tspan><tspan
              sodipodi:role="line"
              x="94.766251"
              y="178.66917"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:Courier;-inkscape-font-specification:Courier;letter-spacing:1.05833328px;stroke-width:0.26458332px;"
              id="tspan7243">RACE</tspan><tspan
              sodipodi:role="line"
              x="94.766251"
              y="183.13402"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:Courier;-inkscape-font-specification:Courier;letter-spacing:1.05833328px;stroke-width:0.26458332px;"
              id="tspan7245">EVEN</tspan><tspan
              sodipodi:role="line"
              x="94.766251"
              y="187.59886"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:Courier;-inkscape-font-specification:Courier;letter-spacing:1.05833328px;stroke-width:0.26458332px;"
              id="tspan7247">EAST</tspan></text>
       </g>
     </g>
