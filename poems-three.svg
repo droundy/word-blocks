@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.3077163"
-     inkscape:cx="318.27513"
-     inkscape:cy="618.34826"
+     inkscape:zoom="6.1269628"
+     inkscape:cx="343.511"
+     inkscape:cy="378.24031"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1854,6 +1854,216 @@
              x="94.766251"
              sodipodi:role="line"
              id="tspan6799">BEST</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g7107"
+       transform="translate(20.000004,-19.579166)">
+      <g
+         id="g6989"
+         transform="translate(6.6340106,60.079086)">
+        <rect
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect6953"
+           width="20"
+           height="20"
+           x="44.253273"
+           y="146.424" />
+        <text
+           id="text6963"
+           y="151.45016"
+           x="54.237087"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="151.45016"
+             x="54.766254"
+             sodipodi:role="line"
+             id="tspan7187">JABS</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="155.91501"
+             x="54.766254"
+             sodipodi:role="line"
+             id="tspan7255">AQUA</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="160.37985"
+             x="54.766254"
+             sodipodi:role="line"
+             id="tspan7257">MUSK</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="164.8447"
+             x="54.766254"
+             sodipodi:role="line"
+             id="tspan7259">BASE</tspan></text>
+        <rect
+           y="146.424"
+           x="64.253273"
+           height="20"
+           width="20"
+           id="rect6965"
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="74.237083"
+           y="151.45016"
+           id="text6975"><tspan
+             id="tspan6973"
+             sodipodi:role="line"
+             x="74.766251"
+             y="151.45016"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px">THAN</tspan><tspan
+             sodipodi:role="line"
+             x="74.766251"
+             y="155.91501"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7195">WORE</tspan><tspan
+             sodipodi:role="line"
+             x="74.766251"
+             y="160.37985"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7197">IBEX</tspan><tspan
+             sodipodi:role="line"
+             x="74.766251"
+             y="164.8447"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7199">GOAT</tspan></text>
+        <rect
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect6977"
+           width="20"
+           height="20"
+           x="84.253273"
+           y="146.424" />
+        <text
+           id="text6987"
+           y="151.45016"
+           x="94.237083"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             id="tspan6985"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="151.45016"
+             x="94.766251"
+             sodipodi:role="line">TZAR</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="155.91501"
+             x="94.766251"
+             sodipodi:role="line"
+             id="tspan7207">HERE</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="160.37985"
+             x="94.766251"
+             sodipodi:role="line"
+             id="tspan7209">AREA</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="164.8447"
+             x="94.766251"
+             sodipodi:role="line"
+             id="tspan7211">TOAD</tspan></text>
+      </g>
+      <g
+         id="g7027"
+         transform="rotate(-90,76.232738,214.52362)">
+        <rect
+           y="169.17816"
+           x="44.253273"
+           height="20"
+           width="20"
+           id="rect6991"
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="54.237087"
+           y="174.20433"
+           id="text7001"><tspan
+             sodipodi:role="line"
+             x="54.766254"
+             y="174.20433"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7151">CARE</tspan><tspan
+             sodipodi:role="line"
+             x="54.766254"
+             y="178.66917"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7219">AWAY</tspan><tspan
+             sodipodi:role="line"
+             x="54.766254"
+             y="183.13402"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7221">GAVE</tspan><tspan
+             sodipodi:role="line"
+             x="54.766254"
+             y="187.59886"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7223">EYES</tspan></text>
+        <rect
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect7003"
+           width="20"
+           height="20"
+           x="64.253273"
+           y="169.17816" />
+        <text
+           id="text7013"
+           y="174.20433"
+           x="74.237083"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="174.20433"
+             x="74.766251"
+             sodipodi:role="line"
+             id="tspan7163">EACH</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="178.66917"
+             x="74.766251"
+             sodipodi:role="line"
+             id="tspan7231">GLUE</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="183.13402"
+             x="74.766251"
+             sodipodi:role="line"
+             id="tspan7233">GIRL</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             y="187.59886"
+             x="74.766251"
+             sodipodi:role="line"
+             id="tspan7235">STEP</tspan></text>
+        <rect
+           y="169.17816"
+           x="84.253273"
+           height="20"
+           width="20"
+           id="rect7015"
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.953125px;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';text-align:center;letter-spacing:1.05833328px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="94.237083"
+           y="174.20433"
+           id="text7025"><tspan
+             sodipodi:role="line"
+             x="94.766251"
+             y="174.20433"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7175">FLAG</tspan><tspan
+             sodipodi:role="line"
+             x="94.766251"
+             y="178.66917"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7243">RACE</tspan><tspan
+             sodipodi:role="line"
+             x="94.766251"
+             y="183.13402"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7245">EVEN</tspan><tspan
+             sodipodi:role="line"
+             x="94.766251"
+             y="187.59886"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.75em;font-family:'Courier 10 Pitch';-inkscape-font-specification:'Courier 10 Pitch';letter-spacing:1.05833328px;stroke-width:0.26458332px"
+             id="tspan7247">EAST</tspan></text>
       </g>
     </g>
   </g>

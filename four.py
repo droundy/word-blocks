@@ -13,6 +13,7 @@ animals = list(set(['lion','bear','goat','seal','dogs','cats','hawk','worm','cro
                     'emus','ibex','gnat','duck','lion','bear','yeti','crab','hare',
                     'wolf','mole','toad','boar','buck','bull','calf','colt','coon',
                     'deer','fawn','foal','joey','lamb','lynx','mule','newt','orca',
+                    'oxen',
 ]))
 
 words = list(set(words+animals))
@@ -195,7 +196,8 @@ for l in letters_left:
 # print('bot dad')
 # pretty_tuples(one_word(1,'apes',one_word(0, 'dada', tuples)))
 
-best = ['love','miri','mama','hugs','kiss','with','hold','doll','girl','boys']
+best = ['love','miri','mama','hugs','kiss','with','hold','doll','girl','boys',
+        'quip','quiz','whiz','zero','zoom','taxi',]
 
 already_found = nicest
 
