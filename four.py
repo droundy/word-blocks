@@ -13,7 +13,7 @@ animals = list(set(['lion','bear','goat','seal','dogs','cats','hawk','worm','cro
                     'emus','ibex','gnat','duck','lion','bear','yeti','crab','hare',
                     'wolf','mole','toad','boar','buck','bull','calf','colt','coon',
                     'deer','fawn','foal','joey','lamb','lynx','mule','newt','orca',
-                    'oxen','lark',
+                    'oxen','lark','swan',
 ]))
 
 words = list(set(words+animals))
