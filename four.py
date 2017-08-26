@@ -291,7 +291,7 @@ for i in range(1000): #range(len(tuples)):
         pretty_tuples(best_tuple)
 
 p = genalg.Population(
-    popsize = 10000,
+    popsize = 20000,
     nchrom = 6,
     chromset = tuples,
 )
