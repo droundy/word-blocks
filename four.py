@@ -291,7 +291,7 @@ for i in range(1000): #range(len(tuples)):
         pretty_tuples(best_tuple)
 
 p = genalg.Population(
-    popsize = 20000,
+    popsize = 10000,
     nchrom = 6,
     chromset = tuples,
 )
@@ -319,8 +319,8 @@ def print_report(name, ind):
 
 best = p.run(
     eval_fn = score,
-    generations = 1000,            # maximum generations to run for
-    verbose = True,
+    generations = 10000,            # maximum generations to run for
+    verbose = 3,
     minimize = False,
     mutations = ['mutate', 'shuffle-mate', 'sort'],
     print_report = print_report,
