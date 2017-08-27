@@ -161,6 +161,15 @@ nicest = [
 ]
 pretty_tuples(nicest)
 
+next_nicest = [
+    ('bird','idea','bear','salt'),
+    ('came','away','gaze','eyes'),
+    ('half','ajar','race','tree'),
+    ('past','aqua','duck','sake'),
+    ('shot','taxi','even','went'),
+    ('swan','here','orca','west'),
+]
+
 letters_left = set('abcdefghijklmnopqrstuvwxyz')
 
 for t in nicest:
@@ -199,7 +208,7 @@ for l in letters_left:
 best = ['love','miri','mama','hugs','kiss','with','hold','doll','girl','boys',
         'quip','quiz','whiz','zero','zoom','taxi','cozy',]
 
-already_found = nicest
+already_found = nicest+next_nicest
 
 unused_best = list(filter(lambda w: not any(map(lambda t: has_word(t, w), already_found)),
                           best+animals))
