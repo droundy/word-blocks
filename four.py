@@ -16,7 +16,16 @@ animals = list(set(['lion','bear','goat','seal','dogs','cats','hawk','worm','cro
                     'oxen','lark','swan',
 ]))
 
-words = list(set(words+animals))
+best = ['love','miri','mama','hugs','kiss','with','hold','doll','girl','boys',
+        'quip','quiz','whiz','zero','zoom','taxi','cozy','card','baby',]
+
+fun = ['cave','sofa','hand','foot','feet','head','shoe','legs','nose','eyes',
+       'ears','blue','toes','bath','lawn','zany',
+       #'dog🐕', 'pup🐕','🐕pup','🐕dog','🐈cat','cat🐈','mew🐈','🐈mew',
+       #'mom💑', '💑mom', 'dad💑', '💑dad',
+]
+
+words = list(set(words+animals+best+fun))
 # words = basic
 
 print len(words)
@@ -66,7 +75,7 @@ def tuples_with_basic(i, v0):
     return tuples
 
 tuples = []
-for v0 in basic:
+for v0 in fun+animals+best+basic:
     for i in range(4):
         tuples += tuples_with_word(i,v0)
     print v0,len(tuples)
@@ -205,13 +214,10 @@ for l in letters_left:
 # print('bot dad')
 # pretty_tuples(one_word(1,'apes',one_word(0, 'dada', tuples)))
 
-best = ['love','miri','mama','hugs','kiss','with','hold','doll','girl','boys',
-        'quip','quiz','whiz','zero','zoom','taxi','cozy',]
-
 already_found = nicest+next_nicest
 
 unused_best = list(filter(lambda w: not any(map(lambda t: has_word(t, w), already_found)),
-                          best+animals))
+                          best+animals+fun))
 unused_basic = list(filter(lambda w: not any(map(lambda t: has_word(t, w), already_found)),
                            basic))
 unused_words = list(filter(lambda w: not any(map(lambda t: has_word(t, w), already_found)),
@@ -251,8 +257,9 @@ def score(tuples):
     s += score_basic(tuples)
     for b in unused_words:
         if any(map(lambda t: has_word(t, b), tuples)):
-            s += 0.1
-    s += 5*score_alpha(tuples)[0]
+            s += 0.9
+    #s += 5*score_alpha(tuples)[0]
+    s += 0.1*score_alpha(tuples)[0]
     return s
 def simple_score(t):
     s = 0.0
@@ -301,7 +308,7 @@ for i in range(1000): #range(len(tuples)):
 
 p = genalg.Population(
     popsize = 10000,
-    nchrom = 6,
+    nchrom = 5,
     chromset = tuples,
 )
 def print_report(name, ind):
