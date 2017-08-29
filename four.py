@@ -335,7 +335,7 @@ def print_report(name, ind):
 
 best = p.run(
     eval_fn = score,
-    generations = 10000,            # maximum generations to run for
+    generations = 1000,            # maximum generations to run for
     verbose = 3,
     minimize = False,
     mutations = ['mutate', 'shuffle-mate', 'sort'],
