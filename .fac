@@ -1,1 +1,3 @@
 | inkscape -d 300 --export-png=poems.png poems.svg
+
+| python map.py
