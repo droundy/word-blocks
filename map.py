@@ -26,7 +26,7 @@ print THETA
 
 print('created red etc')
 
-phi0 = .3
+phi0 = .53
 
 northpole = np.zeros((1000,1000,3))
 x = np.linspace(-1.0,1, 1000)
@@ -42,7 +42,7 @@ for i in range(northpole.shape[0]):
     for j in range(northpole.shape[1]):
         ii = int(TH[i,j]*mymap.shape[0]/np.pi)
         jj = int((PH[i,j]+phi0)*mymap.shape[1]/(2*np.pi)) % mymap.shape[1]
-        northpole[i,j,:] = 1-mymap[ii,jj,:]
+        northpole[i,j,:] = mymap[ii,jj,:]
 
 plt.figure()
 plt.imshow(northpole)
@@ -63,7 +63,7 @@ for i in range(southpole.shape[0]):
     for j in range(southpole.shape[1]):
         ii = int(TH[i,j]*mymap.shape[0]/np.pi)
         jj = int((PH[i,j]+phi0)*mymap.shape[1]/(2*np.pi)) % mymap.shape[1]
-        southpole[i,j,:] = 1-mymap[ii,jj,:]
+        southpole[i,j,:] = mymap[ii,jj,:]
 
 plt.figure()
 plt.imshow(southpole)
@@ -84,11 +84,11 @@ for side in range(4):
         for j in range(uspole.shape[1]):
             ii = int(TH[i,j]*mymap.shape[0]/np.pi)
             jj = int((PH[i,j]+phi0+side*np.pi/2)*mymap.shape[1]/(2*np.pi)) % mymap.shape[1]
-            uspole[i,j,:] = 1-mymap[ii,jj,:]
+            uspole[i,j,:] = mymap[ii,jj,:]
 
     plt.figure()
     plt.imshow(uspole)
 
     misc.imsave('side%d.png' % side, uspole)
 
-plt.show()
+#plt.show()

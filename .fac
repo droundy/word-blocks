@@ -1,3 +1,5 @@
 | inkscape -d 300 --export-png=poems.png poems.svg
 
+| inkscape --export-pdf=nice-map.pdf nice-map.svg
+
 | python map.py
